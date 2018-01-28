@@ -13,6 +13,16 @@ body, html{
     text-align: right;
     height: 70px;
     line-height: 70px;
+    z-index: 2;
+    position: relative;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav a:hover {
+    border-bottom: 1px solid #54D17A;
 }
 
 .menu{
@@ -50,7 +60,6 @@ body, html{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
     background-attachment: fixed;
 }
 
@@ -124,6 +133,8 @@ body, html{
     }
     .nav #toggle:checked + .menu{
         display: block;
+        background-color: #fff;
+        z-index: 1;
     }
 }
 
